@@ -8,7 +8,12 @@
                 <input type="text" name="name" placeholder="Movie name">
                 <button type="submit">Submit</button>
             </form>
-            {{ recommended_text }}
         </div>
+        {% for mov in recommended_text %}
+        <tr>
+            <td> {{ mov }} </td>
+            <br>
+        </tr>    
+        {% endfor %}
     </body>
 </html>
